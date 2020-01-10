@@ -1,7 +1,7 @@
 Summary: Database-specific drivers for libdbi
 Name: libdbi-drivers
 Version: 0.8.3
-Release: 13%{?dist}
+Release: 16%{?dist}
 Group: Development/Libraries
 License: LGPLv2+
 URL: http://libdbi-drivers.sourceforge.net/
@@ -113,6 +113,16 @@ rm -rf $RPM_BUILD_ROOT%{_docdir}/%{name}-%{version}
 %{_libdir}/dbd/libdbdsqlite3.*
 
 %changelog
+* Fri Jan 24 2014 Daniel Mach <dmach@redhat.com> - 0.8.3-16
+- Mass rebuild 2014-01-24
+
+* Wed Jan 15 2014 Honza Horak <hhorak@redhat.com> - 0.8.3-15
+- Rebuild for mariadb-libs
+  Related: #1045013
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 0.8.3-14
+- Mass rebuild 2013-12-27
+
 * Mon Jul 29 2013 Honza Horak <hhorak@redhat.com> 0.8.3-13
 - Spec file clean-up
 - Add support for aarch64
